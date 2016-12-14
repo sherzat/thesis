@@ -14,7 +14,15 @@ class Question_choicesTableSeeder extends Seeder
     public function run()
     {
         //
-        $question = DB::table('questions')->where('id','<',50)
+		$questions = factory(App\Question::class)
+			->create()
+			->where('id', '<', 50)
+			->each(function($question) {
+					$question->choices()->save(factory(App\Choice::class)->make());
+			});
+
+		/*
+		$question = DB::table('questions')->where('id','<',50)
             ->orderBy('id')
             ->get();
 
@@ -36,6 +44,8 @@ class Question_choicesTableSeeder extends Seeder
         $question->choices()->attach([16,17]);
 
         $question = DB::table('questions')->where('id',54)->first();
-        $question->choices()->attach([18,19,20]);
+		$question->choices()->attach([18,19,20]);
+
+		 */
     }
 }

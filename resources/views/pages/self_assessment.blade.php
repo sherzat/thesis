@@ -1,27 +1,26 @@
 @extends('layouts.app')
 @section('content')
 
-    {!! Form::open(['action'=> ['Self_assessmentController@store']]) !!}
-    @foreach ($survey->questions as $question)
-	<div class="container">
-		<div class="jumbotron">
-			<div>
-            <h1>{{$question->question}}</h1>
-			</div>
-
-			<div>
-                @foreach ($question->choices as $choice)
-					<div class="col-sm-2">
-                    {!! Form::radio($question->id,$choice->id)!!} {{$choice->choice}}
-					</div>
-				@endforeach
-			</div>
-		</div>
-	</div>
-
-@endforeach
-<div class="col-sm-12">
-    {!! Form::submit('Submit') !!}
-</div>
+<ul class="collection with-header">
+    <li class="collection-header">
+        <h2 class="flow-text">Recent Surveys
+            <span style="float:right;">
+					<a href='{{route('new.survey')}}'>Create new</a>
+            </span>
+        </h2>
+    </li>
+    @forelse ($surveys as $survey)
+      <li class="collection-item">
+        <div>
+            {{ link_to_route('detail.survey', $survey->name, $survey)}}
+            <a href="survey/view/{{ $survey->id }}" title="Take Survey" class="secondary-content"><i class="material-icons">send</i></a>
+            <a href="survey/{{ $survey->id }}" title="Edit Survey" class="secondary-content"><i class="material-icons">edit</i></a>
+            <a href="survey/answers/{{ $survey->id }}" title="View Survey Answers" class="secondary-content"><i class="material-icons">textsms</i></a>
+        </div>
+        </li>
+    @empty
+        <p class="flow-text center-align">Nothing to show</p>
+    @endforelse
+    </ul>
 {!! Form::close() !!}
 @endsection

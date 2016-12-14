@@ -4,17 +4,18 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Survey_users extends Model
+class Survey_user extends Model
 {
     //
     public $timestamps = false;
 
     protected $fillable =['survey_id', 'user_id'];
-/*
-    public function questions()
+
+    public function responses()
     {
-        return $this->belongsToMany('App\Question', 'responses');
+        return $this->hasMany('App\Response');
     }
+/*
     public function users()
     {
         return $this->belongsToMany('App\User', 'responses');

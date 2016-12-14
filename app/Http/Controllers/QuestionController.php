@@ -12,7 +12,7 @@ use App\Question;
 
 class QuestionController extends Controller
 {
-    public function store()
+    public function mapQC()
     {
         echo 'herhe';
         $question = Question::where('id','<',50)
