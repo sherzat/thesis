@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/graceage.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -22,6 +23,7 @@
 </head>
 <body>
     <div id="app">
+        <div id="navbar"></div>
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
 				<div id="clock" class="navbar-brand"></div>
@@ -34,14 +36,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
-					
                 </div>
-				
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
@@ -49,17 +48,21 @@
                         &nbsp;
                     </ul>
 
+                    @if (Auth::guest())
+                    @else
                     <ul class="nav navbar-nav">
                         <li><a href="/">Home</a></li>
                         <li><a href="/self_assessment">Self-assessment</a></li>
                         <li><a href="/about">About</a></li>
                         <li><a href="/contact">Contact</a></li>
                     </ul>
+                    @endif
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
 
                         <!-- Authentication Links -->
                         @if (Auth::guest())
+                            <li><div id="NavBarForm"></div></li>
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
                         @else
