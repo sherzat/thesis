@@ -7,3 +7,17 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+#home_page {
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-image: url('../img/home_page.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    @media (min-width: 768px) {
+        min-height: 1200px;
+    }
+}

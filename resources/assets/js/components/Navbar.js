@@ -12,28 +12,44 @@ class NavbarForm extends Component{
     }
 
     handleChange(event) {
+        const target = event.target;
+        const value = target.value;
         const name = target.name;
-alert("name :"+name);
-        /*
+        
         this.setState({
               [name]: value
             });
-        this.setState({email: event.target.email});
-        this.setState({password: event.target.password})
-            */
     }
 
     handleSubmit(event) {
 
         alert('A name was submitted: ' + this.state.email + this.state.password);
-        event.preventDefault();
+        var data = {
+              email: this.state.email,
+              password: this.state.password,
+        }
+        $.ajax({
+            type: "POST",
+            url: "/login",
+            data: data,
+            success: function (response) {
+                // you will get response from your php page (what you echo or print)                
+                console.log(response);
+
+            }.bind(this),
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log(textStatus, errorThrown);
+            }.bind(this),
+
+            dataType: dataType,
+        });
     }
     render() {
         return (
             <form onSubmit={this.handleSubmit} className="navbar-form navbar-left">
                 <div className="form-group">
-                    <input type="text" className="form-control" placeholder="E-Mail Address" name="email" value={this.state.email} onChange={this.handleChange}/>
-                    <input type="text" className="form-control" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange}/>
+                    <input type="email" id="email" className="form-control" placeholder="E-Mail Address" name="email" value={this.state.email} onChange={this.handleChange}/>
+                    <input type="password" id="password" className="form-control" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange}/>
 
                 </div>
                 <button type="submit" className="btn btn-default">Login</button>
@@ -61,7 +77,17 @@ class Navbar extends Component{
                         {this.props.brand}
                     </a>
                 </div>
-            <NavbarForm />
+                <div className="collapse navbar-collapse" id="app-navbar-collapse">
+                    <ul className="nav navbar-nav navbar-right">
+                        <NavbarForm />
+                    </ul>
+                    <ul className="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/self_assessment">Self-assessment</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         );

@@ -1,6 +1,7 @@
 /*change the color of navbar.*/
 .navbar-default{
-    background-color: #4abdac
+    background-color: #4abdac;
+    margin-bottom: 0px;
 }
 
 .navbar-default .navbar-brand {
