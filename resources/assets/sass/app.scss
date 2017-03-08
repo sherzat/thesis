@@ -14,13 +14,13 @@
     position: relative;
     width: 100%;
     background-position: center;
-    background-image: url('');
+    background-image: url('../img/home_page.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     color: white;
     @media (min-width: 768px) {
-        min-height: auto;
+        min-height: 1200px;
     }
 }
 
