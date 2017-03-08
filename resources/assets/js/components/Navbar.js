@@ -41,7 +41,7 @@ class NavbarForm extends Component{
                 console.log(textStatus, errorThrown);
             }.bind(this),
 
-            dataType: dataType,
+            dataType: "text",
         });
     }
     render() {
