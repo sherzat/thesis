@@ -8,6 +8,8 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+@import "seniorlife";
+
 #home_page {
     position: relative;
     width: 100%;
@@ -21,3 +23,13 @@
         min-height: 1200px;
     }
 }
+
+.side-menu {
+    height: 248px;
+    color: $primary-color-text;
+    background-color: $primary-color;
+    margin-bottom:16px;
+    margin-right:0px;
+    margin-left:0px;
+}
+

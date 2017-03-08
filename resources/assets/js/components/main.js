@@ -23,10 +23,10 @@ if (document.getElementById('myform')) {
         document.getElementById('myform'));
 }
 
-
+/*
 if (document.getElementById('navbar')) {
     ReactDOM.render(
         <Navbar brand = "SeniorLife" href="/"  />,
         document.getElementById('navbar'));
 }
-
+*/

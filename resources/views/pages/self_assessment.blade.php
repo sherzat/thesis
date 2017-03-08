@@ -1,6 +1,27 @@
 @extends('layouts.app')
+
 @section('content')
 
+<div class="col-md-10">
+    <div class="row">
+        progress bar
+    </div>
+    <div class="row">
+        questions
+    </div>
+
+    <div class="row">
+        answers
+    </div>
+</div>
+<div class="col-md-2">
+    <div class="row side-menu">
+        Self-assesment
+    </div>
+    <div class="row side-menu">
+        Wristband
+    </div>
+</div>
 <ul class="collection with-header">
     <li class="collection-header">
         <h2 class="flow-text">Recent Surveys
