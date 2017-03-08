@@ -15,7 +15,6 @@ class NavbarForm extends Component{
         const target = event.target;
         const value = target.value;
         const name = target.name;
-        
         this.setState({
               [name]: value
             });
@@ -23,6 +22,7 @@ class NavbarForm extends Component{
 
     handleSubmit(event) {
 
+        {{ csrf_field() }}
         alert('A name was submitted: ' + this.state.email + this.state.password);
         var data = {
               email: this.state.email,
@@ -43,6 +43,7 @@ class NavbarForm extends Component{
 
             dataType: "text",
         });
+        event.preventDefault();
     }
     render() {
         return (
