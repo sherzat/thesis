@@ -11,8 +11,13 @@
 |
 */
 
-Route::get('/', 'PagesController@getIndex');
-Route::get('/home', 'HomeController@index');
+//Route::get('/','IndexController@index');
+//Route::get('/mainPage','LoginController@mainPage');
+//Route::get('/likertscale','LikertscaleContorller@likertscale');
+
+//Route::get('/', 'PagesController@getIndex');
+Route::get('/', 'HomeController@index');
+
 
 Route::get('about', 'PagesController@getAbout');
 Route::get('contact', 'PagesController@getContact');
@@ -37,3 +42,8 @@ Route::get('databaseTest', function(){
 Route::get('/storedata', 'QuestionController@mapQC');
 Auth::routes();
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

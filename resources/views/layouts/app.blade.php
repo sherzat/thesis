@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,7 @@
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/graceage.css" rel="stylesheet">
-
+    <link href="/node_modules/font-awesome-4.7.0/scss/font-awesome.scss" rel="stylesheet">
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
@@ -21,111 +22,152 @@
         ]); ?>
     </script>
 </head>
+
 <body>
-    <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
+<div class="container">
+    <nav class="navSettings">
 
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
-                </div>
+        <div class="container-fluid">
 
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul>
+            <div class="navbar-header">
+                <!-- Branding Image -->
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    {{ config('app.name', 'Laravel') }}
+                </a>
+                <!-- Collapsed Hamburger -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-                    @if (Auth::guest())
-                    @else
+            </div>
+
+           <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                <!-- Left Side Of Navbar -->
+               <ul class="nav navbar-nav">
+                    &nbsp;
+               </ul>
+
+                @if (Auth::guest())
+                @else
                     <ul class="nav navbar-nav">
                         <li><a href="/">Feedback</a></li>
                         <li><a href="/self_assessment">Self-assessment</a></li>
                         <li><a href="/about">Challenges</a></li>
+                        <li><a href="/">Quality Of Life</a></li>
                     </ul>
-                    @endif
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
+                 @endif
 
-                        <!-- Authentication Links -->
-                        @if (Auth::guest())
-						<form class="navbar-form navbar-left" role="form" method="POST" action="{{ url('/login') }}">
-							{{ csrf_field() }}
-							<div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-								<input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+            <!-- Right Side Of Navbar -->
+               <ul class="nav navbar-nav navbar-right">
 
-								@if ($errors->has('email'))
-									<span class="help-block">
+                    <!-- Authentication Links -->
+                    @if (Auth::guest())
+                        <form class="navbar-form navbar-left signin_form_width" role="form" method="POST" action="{{ url('/login') }}">
+                            {{ csrf_field() }}
+                            <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                                <input id="email" type="email" placeholder="username" class="signin_input"  name="email" value="{{ old('email') }}" required autofocus>
+
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
 										<strong>{{ $errors->first('email') }}</strong>
 									</span>
-								@endif
-							</div>
+                                @endif
 
-							<div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-								<input id="password" type="password" class="form-control" name="password" required>
+                            </div>
 
-								@if ($errors->has('password'))
-									<span class="help-block">
+                            <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                                <input id="password" placeholder="Password" type="password" class="signin_input" name="password" required>
+
+                                @if ($errors->has('password'))
+                                    <span class="help-block">
 										<strong>{{ $errors->first('password') }}</strong>
 									</span>
-								@endif
-							</div>
+                                @endif
+                            </div>
 
-							<div class="form-group">
-								<button type="submit" class="btn btn-default">
-									Login
-								</button>
-							</div>
-						</form>
-                        @else
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+                            <div class="form-group ">
+                                <button class="btn btn-default signin_button" type="submit">
+                                    Login
+                                </button>
+                            </div>
+                        </form>
 
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="{{ url('/logout') }}"
-                                            onclick="event.preventDefault();
+                    @else
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="{{ url('/logout') }}"
+                                       onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
+                                        Logout
+                                    </a>
 
-                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li>
-                        @endif
-                    </ul>
-                </div>
+                                    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                        {{ csrf_field() }}
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    @endif
+                </ul>
             </div>
-        </nav>
+        </div>
 
-        @yield('content')
-        
-        @if (Auth::guest())
-        @else
-            <nav class="navbar navbar-fixed-bottom">
-                <a class="navbar-brand" href="#">Navbar</a>
-            </nav>
-        @endif
+    </nav>
+</div>
+    @yield('content')
 
 
 
+@if (Auth::guest())
+
+    <div class="subSection">
+        <div class="col-sm-4">
+            <div id="content">
+                <img src="img/Share-64.png" class="img_class_login" alt=""/>
+                <h1>Share</h1>
+                <p>Share your experience with friends and family's. And Let them know you are doing great</p>
+            </div>
+
+        </div>
+        <div class="col-sm-4">
+            <div id="content">
+                <img src="img/Pressure_64.png" class="img_class_login" alt=""/>
+                <h1>Blood Pressure</h1>
+                <p> Measure your blood and get to know your self every day for better health </p>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+
+            <div id="content">
+                <img src="img/Survey-64.png" class="img_class_login" alt=""/>
+                <h1>Survey</h1>
+                <p>By filling our survey you will know your quality of life and we will help you for better
+                    achievement </p>
+            </div>
+        </div>
 
     </div>
+@else
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 footerClass">footer 1</div>
+                <div class="col-sm-4 footerClass" style="margin-left: 5px;">footer 2</div>
+                <div class="col-sm-4 footerClass" style="margin-left: 5px">footer 3</div>
+            </div>
+        </div>
+    </footer>
+    @endif
+
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>

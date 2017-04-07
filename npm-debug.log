@@ -1,0 +1,364 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'webpack',
+1 verbose cli   'webpack-dev-server',
+1 verbose cli   'babel-loader',
+1 verbose cli   'babel-preset-es2015',
+1 verbose cli   'babel-preset-react',
+1 verbose cli   'babel-preset-statage-2',
+1 verbose cli   '--save-dev' ]
+2 info using npm@4.1.2
+3 info using node@v7.6.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData webpack
+8 silly fetchPackageMetaData webpack-dev-server
+9 silly fetchPackageMetaData babel-loader
+10 silly fetchPackageMetaData babel-preset-es2015
+11 silly fetchPackageMetaData babel-preset-react
+12 silly fetchPackageMetaData babel-preset-statage-2
+13 silly fetchNamedPackageData webpack
+14 silly mapToRegistry name webpack
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry data Result {
+17 silly mapToRegistry   raw: 'webpack',
+17 silly mapToRegistry   scope: null,
+17 silly mapToRegistry   escapedName: 'webpack',
+17 silly mapToRegistry   name: 'webpack',
+17 silly mapToRegistry   rawSpec: '',
+17 silly mapToRegistry   spec: 'latest',
+17 silly mapToRegistry   type: 'tag' }
+18 silly mapToRegistry uri https://registry.npmjs.org/webpack
+19 silly fetchNamedPackageData webpack-dev-server
+20 silly mapToRegistry name webpack-dev-server
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'webpack-dev-server',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'webpack-dev-server',
+23 silly mapToRegistry   name: 'webpack-dev-server',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/webpack-dev-server
+25 silly fetchNamedPackageData babel-loader
+26 silly mapToRegistry name babel-loader
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'babel-loader',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   escapedName: 'babel-loader',
+29 silly mapToRegistry   name: 'babel-loader',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://registry.npmjs.org/babel-loader
+31 silly fetchNamedPackageData babel-preset-es2015
+32 silly mapToRegistry name babel-preset-es2015
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'babel-preset-es2015',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   escapedName: 'babel-preset-es2015',
+35 silly mapToRegistry   name: 'babel-preset-es2015',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri https://registry.npmjs.org/babel-preset-es2015
+37 silly fetchNamedPackageData babel-preset-react
+38 silly mapToRegistry name babel-preset-react
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry data Result {
+41 silly mapToRegistry   raw: 'babel-preset-react',
+41 silly mapToRegistry   scope: null,
+41 silly mapToRegistry   escapedName: 'babel-preset-react',
+41 silly mapToRegistry   name: 'babel-preset-react',
+41 silly mapToRegistry   rawSpec: '',
+41 silly mapToRegistry   spec: 'latest',
+41 silly mapToRegistry   type: 'tag' }
+42 silly mapToRegistry uri https://registry.npmjs.org/babel-preset-react
+43 silly fetchNamedPackageData babel-preset-statage-2
+44 silly mapToRegistry name babel-preset-statage-2
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry data Result {
+47 silly mapToRegistry   raw: 'babel-preset-statage-2',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   escapedName: 'babel-preset-statage-2',
+47 silly mapToRegistry   name: 'babel-preset-statage-2',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri https://registry.npmjs.org/babel-preset-statage-2
+49 verbose request uri https://registry.npmjs.org/babel-preset-statage-2
+50 verbose request no auth needed
+51 info attempt registry request try #1 at 6:54:54 AM
+52 verbose request id c93a18aa96943a4e
+53 http request GET https://registry.npmjs.org/babel-preset-statage-2
+54 verbose request uri https://registry.npmjs.org/babel-loader
+55 verbose request no auth needed
+56 info attempt registry request try #1 at 6:54:54 AM
+57 verbose etag W/"58c180c3-1453f"
+58 verbose lastModified Thu, 09 Mar 2017 16:20:19 GMT
+59 http request GET https://registry.npmjs.org/babel-loader
+60 verbose request uri https://registry.npmjs.org/babel-preset-es2015
+61 verbose request no auth needed
+62 info attempt registry request try #1 at 6:54:54 AM
+63 verbose etag W/"58c6019a-ed80"
+64 verbose lastModified Mon, 13 Mar 2017 02:19:06 GMT
+65 http request GET https://registry.npmjs.org/babel-preset-es2015
+66 verbose request uri https://registry.npmjs.org/babel-preset-react
+67 verbose request no auth needed
+68 info attempt registry request try #1 at 6:54:54 AM
+69 verbose etag W/"58c180c2-642c"
+70 verbose lastModified Thu, 09 Mar 2017 16:20:18 GMT
+71 http request GET https://registry.npmjs.org/babel-preset-react
+72 verbose request uri https://registry.npmjs.org/webpack
+73 verbose request no auth needed
+74 info attempt registry request try #1 at 6:54:55 AM
+75 verbose etag W/"58c30ade-e4c30"
+76 verbose lastModified Fri, 10 Mar 2017 20:21:50 GMT
+77 http request GET https://registry.npmjs.org/webpack
+78 verbose request uri https://registry.npmjs.org/webpack-dev-server
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 6:54:55 AM
+81 verbose etag W/"58c7c4ce-2b159"
+82 verbose lastModified Tue, 14 Mar 2017 10:24:14 GMT
+83 http request GET https://registry.npmjs.org/webpack-dev-server
+84 http 304 https://registry.npmjs.org/babel-preset-es2015
+85 verbose headers { date: 'Wed, 15 Mar 2017 05:54:56 GMT',
+85 verbose headers   via: '1.1 varnish',
+85 verbose headers   'cache-control': 'max-age=300',
+85 verbose headers   etag: 'W/"58c6019a-ed80"',
+85 verbose headers   age: '250',
+85 verbose headers   connection: 'keep-alive',
+85 verbose headers   'x-served-by': 'cache-ams4426-AMS',
+85 verbose headers   'x-cache': 'HIT',
+85 verbose headers   'x-cache-hits': '1',
+85 verbose headers   'x-timer': 'S1489557296.398741,VS0,VE0',
+85 verbose headers   vary: 'Accept-Encoding' }
+86 silly get cb [ 304,
+86 silly get   { date: 'Wed, 15 Mar 2017 05:54:56 GMT',
+86 silly get     via: '1.1 varnish',
+86 silly get     'cache-control': 'max-age=300',
+86 silly get     etag: 'W/"58c6019a-ed80"',
+86 silly get     age: '250',
+86 silly get     connection: 'keep-alive',
+86 silly get     'x-served-by': 'cache-ams4426-AMS',
+86 silly get     'x-cache': 'HIT',
+86 silly get     'x-cache-hits': '1',
+86 silly get     'x-timer': 'S1489557296.398741,VS0,VE0',
+86 silly get     vary: 'Accept-Encoding' } ]
+87 verbose etag https://registry.npmjs.org/babel-preset-es2015 from cache
+88 verbose get saving babel-preset-es2015 to C:\Users\Avatar\AppData\Roaming\npm-cache\registry.npmjs.org\babel-preset-es2015\.cache.json
+89 verbose correctMkdir C:\Users\Avatar\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+90 http 304 https://registry.npmjs.org/babel-loader
+91 verbose headers { date: 'Wed, 15 Mar 2017 05:54:56 GMT',
+91 verbose headers   via: '1.1 varnish',
+91 verbose headers   'cache-control': 'max-age=300',
+91 verbose headers   etag: 'W/"58c180c3-1453f"',
+91 verbose headers   age: '60',
+91 verbose headers   connection: 'keep-alive',
+91 verbose headers   'x-served-by': 'cache-ams4133-AMS',
+91 verbose headers   'x-cache': 'HIT',
+91 verbose headers   'x-cache-hits': '1',
+91 verbose headers   'x-timer': 'S1489557296.404125,VS0,VE0',
+91 verbose headers   vary: 'Accept-Encoding' }
+92 silly get cb [ 304,
+92 silly get   { date: 'Wed, 15 Mar 2017 05:54:56 GMT',
+92 silly get     via: '1.1 varnish',
+92 silly get     'cache-control': 'max-age=300',
+92 silly get     etag: 'W/"58c180c3-1453f"',
+92 silly get     age: '60',
+92 silly get     connection: 'keep-alive',
+92 silly get     'x-served-by': 'cache-ams4133-AMS',
+92 silly get     'x-cache': 'HIT',
+92 silly get     'x-cache-hits': '1',
+92 silly get     'x-timer': 'S1489557296.404125,VS0,VE0',
+92 silly get     vary: 'Accept-Encoding' } ]
+93 verbose etag https://registry.npmjs.org/babel-loader from cache
+94 verbose get saving babel-loader to C:\Users\Avatar\AppData\Roaming\npm-cache\registry.npmjs.org\babel-loader\.cache.json
+95 verbose correctMkdir C:\Users\Avatar\AppData\Roaming\npm-cache correctMkdir already in flight; waiting
+96 http 304 https://registry.npmjs.org/webpack-dev-server
+97 verbose headers { date: 'Wed, 15 Mar 2017 05:54:56 GMT',
+97 verbose headers   via: '1.1 varnish',
+97 verbose headers   'cache-control': 'max-age=300',
+97 verbose headers   etag: 'W/"58c7c4ce-2b159"',
+97 verbose headers   age: '9',
+97 verbose headers   connection: 'keep-alive',
+97 verbose headers   'x-served-by': 'cache-ams4441-AMS',
+97 verbose headers   'x-cache': 'HIT',
+97 verbose headers   'x-cache-hits': '1',
+97 verbose headers   'x-timer': 'S1489557296.403472,VS0,VE0',
+97 verbose headers   vary: 'Accept-Encoding' }
+98 silly get cb [ 304,
+98 silly get   { date: 'Wed, 15 Mar 2017 05:54:56 GMT',
+98 silly get     via: '1.1 varnish',
+98 silly get     'cache-control': 'max-age=300',
+98 silly get     etag: 'W/"58c7c4ce-2b159"',
+98 silly get     age: '9',
+98 silly get     connection: 'keep-alive',
+98 silly get     'x-served-by': 'cache-ams4441-AMS',
+98 silly get     'x-cache': 'HIT',
+98 silly get     'x-cache-hits': '1',
+98 silly get     'x-timer': 'S1489557296.403472,VS0,VE0',
+98 silly get     vary: 'Accept-Encoding' } ]
+99 verbose etag https://registry.npmjs.org/webpack-dev-server from cache
+100 verbose get saving webpack-dev-server to C:\Users\Avatar\AppData\Roaming\npm-cache\registry.npmjs.org\webpack-dev-server\.cache.json
+101 verbose correctMkdir C:\Users\Avatar\AppData\Roaming\npm-cache correctMkdir already in flight; waiting
+102 http 304 https://registry.npmjs.org/babel-preset-react
+103 verbose headers { date: 'Wed, 15 Mar 2017 05:54:56 GMT',
+103 verbose headers   via: '1.1 varnish',
+103 verbose headers   'cache-control': 'max-age=300',
+103 verbose headers   etag: 'W/"58c180c2-642c"',
+103 verbose headers   age: '292',
+103 verbose headers   connection: 'keep-alive',
+103 verbose headers   'x-served-by': 'cache-ams4428-AMS',
+103 verbose headers   'x-cache': 'HIT',
+103 verbose headers   'x-cache-hits': '1',
+103 verbose headers   'x-timer': 'S1489557296.403424,VS0,VE0',
+103 verbose headers   vary: 'Accept-Encoding' }
+104 silly get cb [ 304,
+104 silly get   { date: 'Wed, 15 Mar 2017 05:54:56 GMT',
+104 silly get     via: '1.1 varnish',
+104 silly get     'cache-control': 'max-age=300',
+104 silly get     etag: 'W/"58c180c2-642c"',
+104 silly get     age: '292',
+104 silly get     connection: 'keep-alive',
+104 silly get     'x-served-by': 'cache-ams4428-AMS',
+104 silly get     'x-cache': 'HIT',
+104 silly get     'x-cache-hits': '1',
+104 silly get     'x-timer': 'S1489557296.403424,VS0,VE0',
+104 silly get     vary: 'Accept-Encoding' } ]
+105 verbose etag https://registry.npmjs.org/babel-preset-react from cache
+106 verbose get saving babel-preset-react to C:\Users\Avatar\AppData\Roaming\npm-cache\registry.npmjs.org\babel-preset-react\.cache.json
+107 verbose correctMkdir C:\Users\Avatar\AppData\Roaming\npm-cache correctMkdir already in flight; waiting
+108 http 200 https://registry.npmjs.org/webpack
+109 verbose headers { server: 'nginx/1.10.1',
+109 verbose headers   'content-type': 'application/json',
+109 verbose headers   'last-modified': 'Tue, 14 Mar 2017 23:00:04 GMT',
+109 verbose headers   etag: 'W/"58c875f4-e4c42"',
+109 verbose headers   'content-encoding': 'gzip',
+109 verbose headers   'cache-control': 'max-age=300',
+109 verbose headers   'content-length': '48780',
+109 verbose headers   'accept-ranges': 'bytes',
+109 verbose headers   date: 'Wed, 15 Mar 2017 05:54:56 GMT',
+109 verbose headers   via: '1.1 varnish',
+109 verbose headers   age: '245',
+109 verbose headers   connection: 'keep-alive',
+109 verbose headers   'x-served-by': 'cache-ams4147-AMS',
+109 verbose headers   'x-cache': 'HIT',
+109 verbose headers   'x-cache-hits': '1',
+109 verbose headers   'x-timer': 'S1489557296.404338,VS0,VE0',
+109 verbose headers   vary: 'Accept-Encoding' }
+110 silly get cb [ 200,
+110 silly get   { server: 'nginx/1.10.1',
+110 silly get     'content-type': 'application/json',
+110 silly get     'last-modified': 'Tue, 14 Mar 2017 23:00:04 GMT',
+110 silly get     etag: 'W/"58c875f4-e4c42"',
+110 silly get     'content-encoding': 'gzip',
+110 silly get     'cache-control': 'max-age=300',
+110 silly get     'content-length': '48780',
+110 silly get     'accept-ranges': 'bytes',
+110 silly get     date: 'Wed, 15 Mar 2017 05:54:56 GMT',
+110 silly get     via: '1.1 varnish',
+110 silly get     age: '245',
+110 silly get     connection: 'keep-alive',
+110 silly get     'x-served-by': 'cache-ams4147-AMS',
+110 silly get     'x-cache': 'HIT',
+110 silly get     'x-cache-hits': '1',
+110 silly get     'x-timer': 'S1489557296.404338,VS0,VE0',
+110 silly get     vary: 'Accept-Encoding' } ]
+111 verbose get saving webpack to C:\Users\Avatar\AppData\Roaming\npm-cache\registry.npmjs.org\webpack\.cache.json
+112 verbose correctMkdir C:\Users\Avatar\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+113 http 404 https://registry.npmjs.org/babel-preset-statage-2
+114 verbose headers { 'content-type': 'application/json',
+114 verbose headers   'cache-control': 'max-age=0',
+114 verbose headers   'content-length': '2',
+114 verbose headers   'accept-ranges': 'bytes',
+114 verbose headers   date: 'Wed, 15 Mar 2017 05:54:57 GMT',
+114 verbose headers   via: '1.1 varnish',
+114 verbose headers   age: '0',
+114 verbose headers   connection: 'keep-alive',
+114 verbose headers   'x-served-by': 'cache-ams4145-AMS',
+114 verbose headers   'x-cache': 'MISS',
+114 verbose headers   'x-cache-hits': '0',
+114 verbose headers   'x-timer': 'S1489557296.402766,VS0,VE707',
+114 verbose headers   vary: 'Accept-Encoding' }
+115 silly get cb [ 404,
+115 silly get   { 'content-type': 'application/json',
+115 silly get     'cache-control': 'max-age=0',
+115 silly get     'content-length': '2',
+115 silly get     'accept-ranges': 'bytes',
+115 silly get     date: 'Wed, 15 Mar 2017 05:54:57 GMT',
+115 silly get     via: '1.1 varnish',
+115 silly get     age: '0',
+115 silly get     connection: 'keep-alive',
+115 silly get     'x-served-by': 'cache-ams4145-AMS',
+115 silly get     'x-cache': 'MISS',
+115 silly get     'x-cache-hits': '0',
+115 silly get     'x-timer': 'S1489557296.402766,VS0,VE707',
+115 silly get     vary: 'Accept-Encoding' } ]
+116 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/babel-preset-statage-2
+116 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:304:12)
+116 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:282:14)
+116 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:212:14)
+116 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:186:22)
+116 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+116 silly fetchPackageMetaData     at Request.emit (events.js:192:7)
+116 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1081:10)
+116 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+116 silly fetchPackageMetaData     at Request.emit (events.js:189:7)
+116 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1001:12)
+116 silly fetchPackageMetaData  error for babel-preset-statage-2 { Error: Registry returned 404 for GET on https://registry.npmjs.org/babel-preset-statage-2
+116 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:304:12)
+116 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:282:14)
+116 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:212:14)
+116 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:186:22)
+116 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+116 silly fetchPackageMetaData     at Request.emit (events.js:192:7)
+116 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1081:10)
+116 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+116 silly fetchPackageMetaData     at Request.emit (events.js:189:7)
+116 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1001:12)
+116 silly fetchPackageMetaData   pkgid: 'babel-preset-statage-2',
+116 silly fetchPackageMetaData   statusCode: 404,
+116 silly fetchPackageMetaData   code: 'E404' }
+117 silly rollbackFailedOptional Starting
+118 silly rollbackFailedOptional Finishing
+119 silly runTopLevelLifecycles Finishing
+120 silly install printInstalled
+121 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/babel-preset-statage-2
+121 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:304:12)
+121 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:282:14)
+121 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:212:14)
+121 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:186:22)
+121 verbose stack     at emitTwo (events.js:106:13)
+121 verbose stack     at Request.emit (events.js:192:7)
+121 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1081:10)
+121 verbose stack     at emitOne (events.js:96:13)
+121 verbose stack     at Request.emit (events.js:189:7)
+121 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1001:12)
+122 verbose statusCode 404
+123 verbose pkgid babel-preset-statage-2
+124 verbose cwd C:\Users\Avatar\Documents\GitHub\thesis
+125 error Windows_NT 6.1.7601
+126 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "webpack" "webpack-dev-server" "babel-loader" "babel-preset-es2015" "babel-preset-react" "babel-preset-statage-2" "--save-dev"
+127 error node v7.6.0
+128 error npm  v4.1.2
+129 error code E404
+130 error 404 Registry returned 404 for GET on https://registry.npmjs.org/babel-preset-statage-2
+131 error 404
+132 error 404 'babel-preset-statage-2' is not in the npm registry.
+133 error 404 You should bug the author to publish it (or use the name yourself!)
+134 error 404 Note that you can also install from a
+135 error 404 tarball, folder, http url, or git url.
+136 verbose exit [ 1, true ]
